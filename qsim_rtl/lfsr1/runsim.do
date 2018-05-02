@@ -3,17 +3,16 @@
 #  MS 7/2015
 ##################################################
 
-vlib work 
+vlib work
 vmap work work
 
 # Include Netlist and Testbench
-vlog -incr ../../src/mux21.v 
-vlog -incr ../../src/complex_mul.v 
-vlog -incr ../../src/pe.v 
+vlog -incr ../../src/ram_bank.v
 
-vlog -incr ../../tb/pe_tb.v  
 
-# Run Simulator 
-vsim -t ns -lib work testbench 
-do waveformat.do   
+vlog -incr ../../tb/ram_bank_tb.v  
+
+# Run Simulator
+vsim -t ns -lib work testbench
+do waveformat.do
 run -all

@@ -1,17 +1,14 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
 
-add wave -noupdate -radix decimal :testbench:in0
-add wave -noupdate -radix decimal :testbench:in1
-add wave -noupdate -radix decimal :testbench:in2
-add wave -noupdate -radix decimal :testbench:in3
-add wave -noupdate -radix decimal :testbench:w_r
-add wave -noupdate -radix decimal :testbench:w_i
-add wave -noupdate -radix binary :en
-add wave -noupdate -radix decimal :testbench:out0
-add wave -noupdate -radix decimal :testbench:out1
-add wave -noupdate -radix decimal :testbench:out2
-add wave -noupdate -radix decimal :testbench:out3
+add wave -noupdate :testbench: clk
+add wave -noupdate -radix decimal :testbench:en
+add wave -noupdate -radix decimal :testbench:we
+add wave -noupdate -radix decimal :testbench:re
+add wave -noupdate -radix decimal :testbench:d_w
+add wave -noupdate -radix decimal :testbench:addr_w
+add wave -noupdate -radix decimal :testbench:d_r
+add wave -noupdate -radix decimal :testbench:addr_r
 
 
 
