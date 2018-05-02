@@ -50,6 +50,25 @@ module testbench();
     d_w = 7;
     #50;
 
+    re = 1;
+
+    addr_r = 0;
+    #10
+    addr_r = 1;
+    #10
+    addr_r = 2;
+    #10
+    addr_r = 3;
+    #10
+    addr_r = 4;
+    #10
+    addr_r = 5;
+    #10
+    addr_r = 6;
+    #10
+    addr_r = 7;
+    #50;
+
   end
 
   always
