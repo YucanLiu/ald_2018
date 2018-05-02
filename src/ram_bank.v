@@ -10,8 +10,8 @@ module ram_bank(clk, en, we, re, addr_w, d_w, addr_r, d_r);
   input [DATA_BIT-1 : 0] d_w;
   input [ADDR_BIT-1 : 0] addr_w;
 
+  input [ADDR_BIT-1 : 0] addr_r;
   output [DATA_BIT - 1 : 0] d_r;
-  output [ADDR_BIT-1 : 0] addr_r;
 
   reg [DATA_BIT-1 : 0] mem [0 : MEM_HEIGHT-1];
   reg [DATA_BIT-1 : 0] d_r_o;

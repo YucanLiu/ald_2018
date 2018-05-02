@@ -9,9 +9,9 @@ module testbench();
   reg clk, en, we, re;
   reg [DATA_BIT-1 : 0] d_w;
   reg [ADDR_BIT-1 : 0] addr_w;
+  reg [ADDR_BIT-1 : 0] addr_r;
 
   wire [DATA_BIT - 1 : 0] d_r;
-  wire [ADDR_BIT-1 : 0] addr_r;
 
   ram_bank r1 (clk, en, we, re, addr_w, d_w, addr_r, d_r);
 
