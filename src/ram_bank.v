@@ -25,9 +25,10 @@ module ram_bank(clk, en, we, re, addr_w, d_w, addr_r, d_r);
       if (re) begin
         d_r_o <= mem[addr_r];
       end
-      assign d_r = d_r_o;
     end
 
   end
+
+  assign d_r = d_r_o;
 
 endmodule // ram_bank
