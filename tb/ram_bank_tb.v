@@ -69,6 +69,14 @@ module testbench();
     addr_r = 7;
     #50;
 
+    we = 1;
+    re = 1;
+
+    addr_w = 3;
+    d_w = 10;
+    addr_r = 3;
+    #50;
+
   end
 
   always
