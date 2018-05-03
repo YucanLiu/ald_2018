@@ -16,7 +16,7 @@ module testbench();
   ram_bank r1 (clk, en, we, re, addr_w, d_w, addr_r, d_r);
 
   initial begin
-    clk = 0;
+    clk = 1;
     en = 0;
     we = 0;
     re = 0;
