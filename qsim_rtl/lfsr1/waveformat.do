@@ -1,12 +1,14 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
 
-add wave -noupdate -radix binary :testbench:in1
-add wave -noupdate -radix binary :testbench:in2
-add wave -noupdate -radix binary :testbench:w_r
-add wave -noupdate -radix binary :testbench:w_i
-add wave -noupdate -radix binary :testbench:out1
-add wave -noupdate -radix binary :testbench:out2
+add wave -noupdate -radix decimal :testbench:in1
+add wave -noupdate -radix decimal :testbench:in2
+add wave -noupdate -radix decimal :testbench:in3
+
+add wave -noupdate -radix decimal :testbench:sel
+add wave -noupdate -radix decimal :testbench:out
+
+
 
 
 TreeUpdate [SetDefaultTree]

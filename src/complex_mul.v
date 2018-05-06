@@ -19,7 +19,7 @@ module complex_mul(in1, in2, w_r, w_i, out1, out2);
 	assign temp1 = in1 * w_r - in2 * w_i;//(tempinput1*w_r32);//-(tempinput1*w_i32);
 	assign temp2 = in1 * w_i + in2 * w_r;//(tempinput2*w_i32);//+(tempinput2*w_r32);
 
-	assign out1 = temp1[23:8];
-	assign out2 = temp2[23:8];
+	assign out1 = temp1;//[23:8];
+	assign out2 = temp2;//[23:8];
 
 endmodule

@@ -14,31 +14,31 @@
 # vmap -modelsim_quiet work work 
 # Modifying modelsim.ini
 # QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 17:31:04 on May 05,2018
-# vlog -reportprogress 300 -incr ../../src/complex_mul.v 
-# -- Skipping module complex_mul
+# Start time: 11:47:53 on May 06,2018
+# vlog -reportprogress 300 -incr ../../src/mux31.v 
+# -- Skipping module mux31
 # 
 # Top level modules:
-# 	complex_mul
-# End time: 17:31:04 on May 05,2018, Elapsed time: 0:00:00
+# 	mux31
+# End time: 11:47:53 on May 06,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 17:31:04 on May 05,2018
-# vlog -reportprogress 300 -incr ../../tb/complex_mul_tb.v 
+# Start time: 11:47:53 on May 06,2018
+# vlog -reportprogress 300 -incr ../../tb/mux31_tb.v 
 # -- Skipping module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 17:31:04 on May 05,2018, Elapsed time: 0:00:00
+# End time: 11:47:53 on May 06,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -do "runsim.do" 
-# Start time: 17:31:04 on May 05,2018
+# Start time: 11:47:53 on May 06,2018
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # Loading work.testbench
-# Loading work.complex_mul
-# ** Warning: (vsim-3015) ../../tb/complex_mul_tb.v(7): [PCDPC] - Port size (17) does not match connection size (16) for port 'out1'. The port definition is at: ../../src/complex_mul.v(3).
-#         Region: :testbench:u
-# ** Warning: (vsim-3015) ../../tb/complex_mul_tb.v(7): [PCDPC] - Port size (17) does not match connection size (16) for port 'out2'. The port definition is at: ../../src/complex_mul.v(3).
-#         Region: :testbench:u
-# End time: 17:31:28 on May 05,2018, Elapsed time: 0:00:24
-# Errors: 0, Warnings: 3
+# doVOpenFlatFile(): INTERNAL ERROR: page load failed for file /homes/user/spring18/wb2331/study/ald_2018/qsim_rtl/lfsr1/work/mux31/verilog.asm64 (3:3 1:1 61 0 9984 1525271745 0x103:0x1)
+# ** Error: (vsim-3171) Could not find machine code for '/homes/user/spring18/wb2331/study/ald_2018/qsim_rtl/lfsr1/work.mux31'.
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./runsim.do PAUSED at line 15
