@@ -26,10 +26,17 @@ def to_twoscomplement(bits, value):
 
 def main():
 	twiddle = cal_twiddle()
+	result = []
 	n = 16
 	for index in range(N):
-		print 'w_r'+ str(index)+ '= ' + to_twoscomplement(16,int(twiddle[index].r*(2**8)))
-		print 'w_i'+ str(index)+ '= '+ to_twoscomplement(16, int(twiddle[index].i*(2**8)))
+		result.append(to_twoscomplement(16,int(twiddle[index].r*(2**8))))
+		result.append(to_twoscomplement(16, int(twiddle[index].i*(2**8))))
+		# print 'w_r'+ str(index)+ '= ' + to_twoscomplement(16,int(twiddle[index].r*(2**8)))
+		# print 'w_i'+ str(index)+ '= '+ to_twoscomplement(16, int(twiddle[index].i*(2**8)))
+	verilog_twiddle = ''
+	for r in result:
+		verilog_twiddle = verilog_twiddle + r
+	print verilog_twiddle
 
 
 main()
