@@ -9,39 +9,38 @@ z2
 cModel Technology
 Z0 d/tools2/courses/ee6321/share/project/qsim_rtl/lfsr1
 vcomplex_mul
-!s10a 1525618684
-!s110 1525620192
+Z1 !s110 1525624242
 !i10b 1
 !s100 G`Yh0]QG49k7@X>mW59Zb3
-IPG@[S4l3I^o`L4IkFO5Df2
-Z1 V`JN@9S9cnhjKRR_L]QIcM3
-Z2 d/homes/user/spring18/wb2331/study/ald_2018/qsim_rtl/lfsr1
-w1525618684
-8../../src/complex_mul.v
-F../../src/complex_mul.v
+IUaQUh4:P2jV7Y<TlSK^Y;3
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+Z3 d/homes/user/fall17/yl3791/ald_2018/qsim_rtl/lfsr1
+Z4 w1525623411
+8/homes/user/fall17/yl3791/ald_2018/src/complex_mul.v
+F/homes/user/fall17/yl3791/ald_2018/src/complex_mul.v
 L0 3
-Z3 OL;L;10.3d;59
+Z5 OL;L;10.3d;59
 r1
 !s85 0
 31
-!s108 1525620192.631565
-!s107 ../../src/complex_mul.v|
-!s90 -reportprogress|300|-incr|../../src/complex_mul.v|
+!s108 1525624242.097439
+!s107 /homes/user/fall17/yl3791/ald_2018/src/complex_mul.v|
+!s90 -reportprogress|300|-incr|/homes/user/fall17/yl3791/ald_2018/src/complex_mul.v|
 !i113 1
-Z4 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vlfsr1
 !s10a 1437407754
 !s110 1476470941
 !i10b 1
 !s100 hTo8hKzdO=^P3=AlEQoz^3
 I834eQ7S_D<O`OkFPOAAoI0
-R1
+R2
 R0
 w1437407754
 8../../rtl/lfsr1/lfsr1.v
 F../../rtl/lfsr1/lfsr1.v
 L0 7
-R3
+R5
 r1
 !s85 0
 31
@@ -49,130 +48,124 @@ r1
 !s107 ../../rtl/lfsr1/lfsr1.v|
 !s90 -reportprogress|300|-incr|../../rtl/lfsr1/lfsr1.v|
 !i113 1
-R4
+R6
 vmux21
-Z5 !s10a 1525617953
-!s110 1525271317
+R1
 !i10b 1
 !s100 A8oj?GFYYFIf<`ElXQl4O3
-I;9CZ<T<R;CJJWSN8adbgg2
-R1
-Z6 d/homes/user/fall17/yl3791/Desktop/ALD_proj/qsim_rtl/lfsr1
-w1525271258
-8../../src/mux21.v
-F../../src/mux21.v
-L0 3
+I6CjQMX]UbDliJA3Fz_<[;1
+R2
 R3
+w1525271258
+8/homes/user/fall17/yl3791/ald_2018/src/mux21.v
+F/homes/user/fall17/yl3791/ald_2018/src/mux21.v
+L0 3
+R5
 r1
 !s85 0
 31
-!s108 1525271317.709041
-!s107 ../../src/mux21.v|
-!s90 -reportprogress|300|-incr|../../src/mux21.v|
+!s108 1525624242.272169
+!s107 /homes/user/fall17/yl3791/ald_2018/src/mux21.v|
+!s90 -reportprogress|300|-incr|/homes/user/fall17/yl3791/ald_2018/src/mux21.v|
 !i113 1
-R4
+R6
 vmux31
-R5
-!s110 1525271745
+R1
 !i10b 1
 !s100 B=]IELo4C>CBB7ZG0clFJ1
-IaXkJM?efUdBEe3@AUXkOS0
-R1
-R6
-w1525271739
-8../../src/mux31.v
-F../../src/mux31.v
-L0 3
+IYVQBEUaH`oSKK4GV<7g=51
+R2
 R3
+w1525271739
+8/homes/user/fall17/yl3791/ald_2018/src/mux31.v
+F/homes/user/fall17/yl3791/ald_2018/src/mux31.v
+L0 3
+R5
 r1
 !s85 0
 31
-!s108 1525271745.421476
-!s107 ../../src/mux31.v|
-!s90 -reportprogress|300|-incr|../../src/mux31.v|
+!s108 1525624242.392145
+!s107 /homes/user/fall17/yl3791/ald_2018/src/mux31.v|
+!s90 -reportprogress|300|-incr|/homes/user/fall17/yl3791/ald_2018/src/mux31.v|
 !i113 1
-R4
+R6
 vpe
-R5
-!s110 1525273314
+R1
 !i10b 1
 !s100 OeR`[HTWS[@Bb4<`Fh1j[0
-I@Qnjf9^ZGSoI4M4Ak_g[53
-R1
-R6
-w1525273309
-8../../src/pe.v
-F../../src/pe.v
-L0 3
+IniK>3H1Uj[PAkQ2Q:hXE80
+R2
 R3
+w1525273309
+8/homes/user/fall17/yl3791/ald_2018/src/pe.v
+F/homes/user/fall17/yl3791/ald_2018/src/pe.v
+L0 3
+R5
 r1
 !s85 0
 31
-!s108 1525273314.876532
-!s107 ../../src/pe.v|
-!s90 -reportprogress|300|-incr|../../src/pe.v|
+!s108 1525624242.510400
+!s107 /homes/user/fall17/yl3791/ald_2018/src/pe.v|
+!s90 -reportprogress|300|-incr|/homes/user/fall17/yl3791/ald_2018/src/pe.v|
 !i113 1
-R4
+R6
 vram_bank
-R5
-!s110 1525305274
+R1
 !i10b 1
 !s100 _1_bM?o0N^jkiG_B>1NO30
-II>FVUe?F5fY3UU?bRijbj3
-R1
-d/user/fall17/yl3791/ald_2018/qsim_rtl/lfsr1
-w1525305263
-8../../src/ram_bank.v
-F../../src/ram_bank.v
-L0 3
+IL7C94A[OifTZ@7FU7O@jh3
+R2
 R3
+w1525305263
+8/homes/user/fall17/yl3791/ald_2018/src/ram_bank.v
+F/homes/user/fall17/yl3791/ald_2018/src/ram_bank.v
+L0 3
+R5
 r1
 !s85 0
 31
-!s108 1525305274.119309
-!s107 ../../src/ram_bank.v|
-!s90 -reportprogress|300|-incr|../../src/ram_bank.v|
+!s108 1525624242.180185
+!s107 /homes/user/fall17/yl3791/ald_2018/src/ram_bank.v|
+!s90 -reportprogress|300|-incr|/homes/user/fall17/yl3791/ald_2018/src/ram_bank.v|
 !i113 1
-R4
+R6
 vrfft_4pt
-!s10a 1525620423
-!s110 1525620431
+R1
 !i10b 1
 !s100 H24F18@fhDk7`zH_45a0<0
-I78RWTINPLogoP;1D3O[S63
-R1
+IJjzSc_6]eFe8L25TOW=4_0
 R2
-w1525620423
-8../../src/rfft_4pt.v
-F../../src/rfft_4pt.v
-L0 3
 R3
-r1
-!s85 0
-31
-!s108 1525620431.371371
-!s107 ../../src/rfft_4pt.v|
-!s90 -reportprogress|300|-incr|../../src/rfft_4pt.v|
-!i113 1
 R4
-vtestbench
+8/homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v
+F/homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v
+L0 3
 R5
-!s110 1525621599
-!i10b 1
-!s100 cB1l20UcQbfZ;HVZG><i70
-IPanfc_K^B`Yg:8j96h91W2
-R1
-R2
-w1525617953
-8../../tb/mux31_tb.v
-F../../tb/mux31_tb.v
-L0 3
-R3
 r1
 !s85 0
 31
-!s108 1525621599.397477
-!s107 ../../tb/mux31_tb.v|
-!s90 -reportprogress|300|-incr|../../tb/mux31_tb.v|
+!s108 1525624242.630189
+!s107 /homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v|
+!s90 -reportprogress|300|-incr|/homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v|
 !i113 1
+R6
+vtestbench
+R1
+!i10b 1
+!s100 9<;FUQB^zKl@hRT0Kmn^93
+Ia::gk<JNWRcWJKR@8dAnM2
+R2
+R3
 R4
+8/homes/user/fall17/yl3791/ald_2018/tb/rfft_4pt_tb.v
+F/homes/user/fall17/yl3791/ald_2018/tb/rfft_4pt_tb.v
+L0 3
+R5
+r1
+!s85 0
+31
+!s108 1525624242.733542
+!s107 /homes/user/fall17/yl3791/ald_2018/tb/rfft_4pt_tb.v|
+!s90 -reportprogress|300|-incr|/homes/user/fall17/yl3791/ald_2018/tb/rfft_4pt_tb.v|
+!i113 1
+R6

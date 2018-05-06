@@ -14,33 +14,118 @@
 # vmap -modelsim_quiet work work 
 # Modifying modelsim.ini
 # QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 11:47:53 on May 06,2018
-# vlog -reportprogress 300 -incr ../../src/mux31.v 
-# -- Skipping module mux31
+# Start time: 12:30:42 on May 06,2018
+# vlog -reportprogress 300 -incr /homes/user/fall17/yl3791/ald_2018/src/complex_mul.v 
+# -- Compiling module complex_mul
+# 
+# Top level modules:
+# 	complex_mul
+# End time: 12:30:42 on May 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
+# Start time: 12:30:42 on May 06,2018
+# vlog -reportprogress 300 -incr /homes/user/fall17/yl3791/ald_2018/src/ram_bank.v 
+# -- Compiling module ram_bank
+# 
+# Top level modules:
+# 	ram_bank
+# End time: 12:30:42 on May 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
+# Start time: 12:30:42 on May 06,2018
+# vlog -reportprogress 300 -incr /homes/user/fall17/yl3791/ald_2018/src/mux21.v 
+# -- Compiling module mux21
+# 
+# Top level modules:
+# 	mux21
+# End time: 12:30:42 on May 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
+# Start time: 12:30:42 on May 06,2018
+# vlog -reportprogress 300 -incr /homes/user/fall17/yl3791/ald_2018/src/mux31.v 
+# -- Compiling module mux31
 # 
 # Top level modules:
 # 	mux31
-# End time: 11:47:53 on May 06,2018, Elapsed time: 0:00:00
+# End time: 12:30:42 on May 06,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 11:47:53 on May 06,2018
-# vlog -reportprogress 300 -incr ../../tb/mux31_tb.v 
-# -- Skipping module testbench
+# Start time: 12:30:42 on May 06,2018
+# vlog -reportprogress 300 -incr /homes/user/fall17/yl3791/ald_2018/src/pe.v 
+# -- Compiling module pe
+# 
+# Top level modules:
+# 	pe
+# End time: 12:30:42 on May 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
+# Start time: 12:30:42 on May 06,2018
+# vlog -reportprogress 300 -incr /homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v 
+# -- Compiling module rfft_4pt
+# 
+# Top level modules:
+# 	rfft_4pt
+# End time: 12:30:42 on May 06,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
+# Start time: 12:30:42 on May 06,2018
+# vlog -reportprogress 300 -incr /homes/user/fall17/yl3791/ald_2018/tb/rfft_4pt_tb.v 
+# -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 11:47:53 on May 06,2018, Elapsed time: 0:00:00
+# End time: 12:30:42 on May 06,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -do "runsim.do" 
-# Start time: 11:47:53 on May 06,2018
+# Start time: 12:30:42 on May 06,2018
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # Loading work.testbench
-# doVOpenFlatFile(): INTERNAL ERROR: page load failed for file /homes/user/spring18/wb2331/study/ald_2018/qsim_rtl/lfsr1/work/mux31/verilog.asm64 (3:3 1:1 61 0 9984 1525271745 0x103:0x1)
-# ** Error: (vsim-3171) Could not find machine code for '/homes/user/spring18/wb2331/study/ald_2018/qsim_rtl/lfsr1/work.mux31'.
-# No such file or directory. (errno = ENOENT)
+# Loading work.rfft_4pt
+# Loading work.mux21
+# Loading work.ram_bank
+# Loading work.mux31
+# Loading work.pe
+# Loading work.complex_mul
+# ** Error: (vsim-3053) /homes/user/fall17/yl3791/ald_2018/tb/rfft_4pt_tb.v(14): Illegal output or inout port connection for port 'mem0'.
+#         Region: :testbench:u
+# ** Error: (vsim-3053) /homes/user/fall17/yl3791/ald_2018/tb/rfft_4pt_tb.v(14): Illegal output or inout port connection for port 'mem1'.
+#         Region: :testbench:u
+# ** Error: (vsim-3053) /homes/user/fall17/yl3791/ald_2018/tb/rfft_4pt_tb.v(14): Illegal output or inout port connection for port 'mem2'.
+#         Region: :testbench:u
+# ** Error: (vsim-3053) /homes/user/fall17/yl3791/ald_2018/tb/rfft_4pt_tb.v(14): Illegal output or inout port connection for port 'mem3'.
+#         Region: :testbench:u
+# ** Warning: (vsim-3015) /homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v(31): [PCDPC] - Port size (1) does not match connection size (32) for port 'en'. The port definition is at: /homes/user/fall17/yl3791/ald_2018/src/ram_bank.v(3).
+#         Region: :testbench:u:r0
+# ** Warning: (vsim-3015) /homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v(31): [PCDPC] - Port size (1) does not match connection size (32) for port 'we'. The port definition is at: /homes/user/fall17/yl3791/ald_2018/src/ram_bank.v(3).
+#         Region: :testbench:u:r0
+# ** Warning: (vsim-3015) /homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v(31): [PCDPC] - Port size (1) does not match connection size (32) for port 're'. The port definition is at: /homes/user/fall17/yl3791/ald_2018/src/ram_bank.v(3).
+#         Region: :testbench:u:r0
+# ** Warning: (vsim-3015) /homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v(32): [PCDPC] - Port size (1) does not match connection size (32) for port 'en'. The port definition is at: /homes/user/fall17/yl3791/ald_2018/src/ram_bank.v(3).
+#         Region: :testbench:u:r1
+# ** Warning: (vsim-3015) /homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v(32): [PCDPC] - Port size (1) does not match connection size (32) for port 'we'. The port definition is at: /homes/user/fall17/yl3791/ald_2018/src/ram_bank.v(3).
+#         Region: :testbench:u:r1
+# ** Warning: (vsim-3015) /homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v(32): [PCDPC] - Port size (1) does not match connection size (32) for port 're'. The port definition is at: /homes/user/fall17/yl3791/ald_2018/src/ram_bank.v(3).
+#         Region: :testbench:u:r1
+# ** Warning: (vsim-3015) /homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v(33): [PCDPC] - Port size (1) does not match connection size (32) for port 'en'. The port definition is at: /homes/user/fall17/yl3791/ald_2018/src/ram_bank.v(3).
+#         Region: :testbench:u:r2
+# ** Warning: (vsim-3015) /homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v(33): [PCDPC] - Port size (1) does not match connection size (32) for port 'we'. The port definition is at: /homes/user/fall17/yl3791/ald_2018/src/ram_bank.v(3).
+#         Region: :testbench:u:r2
+# ** Warning: (vsim-3015) /homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v(33): [PCDPC] - Port size (1) does not match connection size (32) for port 're'. The port definition is at: /homes/user/fall17/yl3791/ald_2018/src/ram_bank.v(3).
+#         Region: :testbench:u:r2
+# ** Warning: (vsim-3015) /homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v(34): [PCDPC] - Port size (1) does not match connection size (32) for port 'en'. The port definition is at: /homes/user/fall17/yl3791/ald_2018/src/ram_bank.v(3).
+#         Region: :testbench:u:r3
+# ** Warning: (vsim-3015) /homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v(34): [PCDPC] - Port size (1) does not match connection size (32) for port 'we'. The port definition is at: /homes/user/fall17/yl3791/ald_2018/src/ram_bank.v(3).
+#         Region: :testbench:u:r3
+# ** Warning: (vsim-3015) /homes/user/fall17/yl3791/ald_2018/src/rfft_4pt.v(34): [PCDPC] - Port size (1) does not match connection size (32) for port 're'. The port definition is at: /homes/user/fall17/yl3791/ald_2018/src/ram_bank.v(3).
+#         Region: :testbench:u:r3
+# ** Warning: (vsim-3015) /homes/user/fall17/yl3791/ald_2018/src/pe.v(15): [PCDPC] - Port size (17) does not match connection size (16) for port 'out1'. The port definition is at: /homes/user/fall17/yl3791/ald_2018/src/complex_mul.v(3).
+#         Region: :testbench:u:pe:multi
+# ** Warning: (vsim-3015) /homes/user/fall17/yl3791/ald_2018/src/pe.v(15): [PCDPC] - Port size (17) does not match connection size (16) for port 'out2'. The port definition is at: /homes/user/fall17/yl3791/ald_2018/src/complex_mul.v(3).
+#         Region: :testbench:u:pe:multi
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
-# MACRO ./runsim.do PAUSED at line 15
-# End time: 11:51:17 on May 06,2018, Elapsed time: 0:03:24
-# Errors: 1, Warnings: 1
+# MACRO ./runsim.do PAUSED at line 20
+# Break key hit
+# End time: 12:31:18 on May 06,2018, Elapsed time: 0:00:36
+# Errors: 4, Warnings: 15
