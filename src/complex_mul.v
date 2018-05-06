@@ -6,7 +6,7 @@ module complex_mul(in1, in2, w_r, w_i, out1, out2);
 	//wire [31:0] tempinput1, tempinput2; 
 	wire [31:0] temp1, temp2; 
 	//output [15:0] out1, out2;
-	output [16:0] out1, out2;
+	output [15:0] out1, out2;
 	
 	//wire symbol1, symbol2;
 	//assign simbol1 = in1[15];

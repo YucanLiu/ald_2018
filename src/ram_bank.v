@@ -20,10 +20,10 @@ module ram_bank(clk, en, we, re, addr_w, d_w, addr_r, d_r);
 
     if (en) begin
       if (we) begin
-        mem[addr_w] <= d_w;
+        mem[addr_w] = d_w;
       end
       if (re) begin
-        d_r_o <= mem[addr_r];
+        d_r_o = mem[addr_r];
       end
     end
 

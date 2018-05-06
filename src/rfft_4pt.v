@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps  
 
-module rfft_4pt(in0, in1, in2, in3, mem0, mem1, mem2, mem3, m0, m11, m12, m13, m14, m21, m22, m23, m24, w_r, w_i, bypass_en, addr_read, addr_write, clk);
+module rfft_4pt(in0, in1, in2, in3, mem0_o, mem1_o, mem2_o, mem3_o, m0, m11, m12, m13, m14, m21, m22, m23, m24, w_r, w_i, bypass_en, addr_read, addr_write, clk);
 
   	parameter ADDR_BIT = 3;
 
@@ -17,8 +17,8 @@ module rfft_4pt(in0, in1, in2, in3, mem0, mem1, mem2, mem3, m0, m11, m12, m13, m
 	wire [15:0] m11o, m12o, m13o, m14o; // output of m1 muxes
 
 	wire [15:0] dout0, dout1, dout2, dout3;
-	inout [15:0] mem0, mem1, mem2, mem3;
-	
+	output [15:0] mem0_o, mem1_o, mem2_o, mem3_o;
+	wire [15:0] mem0, mem1, mem2, mem3;	
 
 	// MUX m0
 	mux21 mux_m00 (in0, out0, m0, m0o0);
@@ -28,10 +28,10 @@ module rfft_4pt(in0, in1, in2, in3, mem0, mem1, mem2, mem3, m0, m11, m12, m13, m
 
 
 	// RAM bank
-	ram_bank r0 (clk, 1, 1, 1, addr_write[ADDR_BIT -1 : 0], m0o0, addr_read[ADDR_BIT - 1 : 0], mem0);
-	ram_bank r1 (clk, 1, 1, 1, addr_write[ADDR_BIT*2 -1 : ADDR_BIT], m0o1, addr_read[ADDR_BIT*2 - 1 : ADDR_BIT], mem1);
-	ram_bank r2 (clk, 1, 1, 1, addr_write[ADDR_BIT*3 -1 : ADDR_BIT*2], m0o2, addr_read[ADDR_BIT*3 - 1 : ADDR_BIT*2], mem2);
-	ram_bank r3 (clk, 1, 1, 1, addr_write[ADDR_BIT*4 -1 : ADDR_BIT*3], m0o3, addr_read[ADDR_BIT*4 - 1 : ADDR_BIT*3], mem3);
+	ram_bank r0 (clk, 1'b1, 1'b1, 1'b1, addr_write[ADDR_BIT -1 : 0], m0o0, addr_read[ADDR_BIT - 1 : 0], mem0);
+	ram_bank r1 (clk, 1'b1, 1'b1, 1'b1, addr_write[ADDR_BIT*2 -1 : ADDR_BIT], m0o1, addr_read[ADDR_BIT*2 - 1 : ADDR_BIT], mem1);
+	ram_bank r2 (clk, 1'b1, 1'b1, 1'b1, addr_write[ADDR_BIT*3 -1 : ADDR_BIT*2], m0o2, addr_read[ADDR_BIT*3 - 1 : ADDR_BIT*2], mem2);
+	ram_bank r3 (clk, 1'b1, 1'b1, 1'b1, addr_write[ADDR_BIT*4 -1 : ADDR_BIT*3], m0o3, addr_read[ADDR_BIT*4 - 1 : ADDR_BIT*3], mem3);
 	
 
 	// MUX m11 - m14
@@ -51,5 +51,8 @@ module rfft_4pt(in0, in1, in2, in3, mem0, mem1, mem2, mem3, m0, m11, m12, m13, m
 	mux21 mux_m23 (dout0, dout2, m23, out2);
 	mux21 mux_m24 (dout1, dout3, m24, out3);
 	
-
+	assign mem0_o = mem0;
+	assign mem1_o = mem1;
+	assign mem2_o = mem2;
+	assign mem3_o = mem3;
 endmodule
