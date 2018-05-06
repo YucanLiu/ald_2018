@@ -14,47 +14,31 @@
 # vmap -modelsim_quiet work work 
 # Modifying modelsim.ini
 # QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 11:01:54 on May 02,2018
-# vlog -reportprogress 300 -incr ../../src/mux21.v 
-# -- Skipping module mux21
-# 
-# Top level modules:
-# 	mux21
-# End time: 11:01:54 on May 02,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 11:01:54 on May 02,2018
+# Start time: 17:31:04 on May 05,2018
 # vlog -reportprogress 300 -incr ../../src/complex_mul.v 
 # -- Skipping module complex_mul
 # 
 # Top level modules:
 # 	complex_mul
-# End time: 11:01:54 on May 02,2018, Elapsed time: 0:00:00
+# End time: 17:31:04 on May 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 11:01:54 on May 02,2018
-# vlog -reportprogress 300 -incr ../../src/pe.v 
-# -- Compiling module pe
-# 
-# Top level modules:
-# 	pe
-# End time: 11:01:54 on May 02,2018, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 11:01:54 on May 02,2018
-# vlog -reportprogress 300 -incr ../../tb/pe_tb.v 
+# Start time: 17:31:04 on May 05,2018
+# vlog -reportprogress 300 -incr ../../tb/complex_mul_tb.v 
 # -- Skipping module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 11:01:55 on May 02,2018, Elapsed time: 0:00:01
+# End time: 17:31:04 on May 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -do "runsim.do" 
-# Start time: 11:01:55 on May 02,2018
+# Start time: 17:31:04 on May 05,2018
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # Loading work.testbench
-# Loading work.pe
 # Loading work.complex_mul
-# Loading work.mux21
-# End time: 11:03:09 on May 02,2018, Elapsed time: 0:01:14
-# Errors: 0, Warnings: 1
+# ** Warning: (vsim-3015) ../../tb/complex_mul_tb.v(7): [PCDPC] - Port size (17) does not match connection size (16) for port 'out1'. The port definition is at: ../../src/complex_mul.v(3).
+#         Region: :testbench:u
+# ** Warning: (vsim-3015) ../../tb/complex_mul_tb.v(7): [PCDPC] - Port size (17) does not match connection size (16) for port 'out2'. The port definition is at: ../../src/complex_mul.v(3).
+#         Region: :testbench:u
+# End time: 17:31:28 on May 05,2018, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 3

@@ -2,7 +2,7 @@
 
 module testbench;
 	reg [15:0] in1, in2, w_r, w_i;
-	wire [15:0] out1, out2;
+	wire [31:0] out1, out2;
 
 	complex_mul u (in1, in2, w_r, w_i, out1, out2);
 
@@ -33,7 +33,6 @@ begin
 	in2 = 0;
 	w_r = 0;
 	w_i = 0;
-#50;
 
 end
 

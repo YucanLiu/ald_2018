@@ -7,10 +7,9 @@ vlib work
 vmap work work
 
 # Include Netlist and Testbench
-vlog -incr ../../src/ram_bank.v
+vlog -incr ../../src/complex_mul.v
 
-
-vlog -incr ../../tb/ram_bank_tb.v  
+vlog -incr ../../tb/complex_mul_tb.v  
 
 # Run Simulator
 vsim -t ns -lib work testbench

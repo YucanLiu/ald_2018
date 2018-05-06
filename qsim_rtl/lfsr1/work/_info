@@ -9,39 +9,39 @@ z2
 cModel Technology
 Z0 d/tools2/courses/ee6321/share/project/qsim_rtl/lfsr1
 vcomplex_mul
-!s10a 1525270548
-!s110 1525268290
+!s10a 1525555722
+Z1 !s110 1525555729
 !i10b 1
-!s100 Pm=2`hHY>EiZc`kd<k3j<3
-I889RhGEhV?Oih>n?:K4oc3
-Z1 V`JN@9S9cnhjKRR_L]QIcM3
-Z2 d/homes/user/fall17/yl3791/Desktop/ALD_proj/qsim_rtl/lfsr1
-w1525268284
+!s100 9AFVPjji:Nn20gNEn5B;i2
+I02Beh_=gALB@@=K[2TiPh2
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+Z3 d/user/fall17/yl3791/ald_2018/qsim_rtl/lfsr1
+w1525555722
 8../../src/complex_mul.v
 F../../src/complex_mul.v
 L0 3
-Z3 OL;L;10.3d;59
+Z4 OL;L;10.3d;59
 r1
 !s85 0
 31
-!s108 1525268290.823817
+!s108 1525555729.424030
 !s107 ../../src/complex_mul.v|
 !s90 -reportprogress|300|-incr|../../src/complex_mul.v|
 !i113 1
-Z4 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z5 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vlfsr1
 !s10a 1437407754
 !s110 1476470941
 !i10b 1
 !s100 hTo8hKzdO=^P3=AlEQoz^3
 I834eQ7S_D<O`OkFPOAAoI0
-R1
+R2
 R0
 w1437407754
 8../../rtl/lfsr1/lfsr1.v
 F../../rtl/lfsr1/lfsr1.v
 L0 7
-R3
+R4
 r1
 !s85 0
 31
@@ -49,20 +49,20 @@ r1
 !s107 ../../rtl/lfsr1/lfsr1.v|
 !s90 -reportprogress|300|-incr|../../rtl/lfsr1/lfsr1.v|
 !i113 1
-R4
+R5
 vmux21
 !s10a 1525271258
 !s110 1525271317
 !i10b 1
 !s100 A8oj?GFYYFIf<`ElXQl4O3
 I;9CZ<T<R;CJJWSN8adbgg2
-R1
 R2
+Z6 d/homes/user/fall17/yl3791/Desktop/ALD_proj/qsim_rtl/lfsr1
 w1525271258
 8../../src/mux21.v
 F../../src/mux21.v
 L0 3
-R3
+R4
 r1
 !s85 0
 31
@@ -70,20 +70,20 @@ r1
 !s107 ../../src/mux21.v|
 !s90 -reportprogress|300|-incr|../../src/mux21.v|
 !i113 1
-R4
+R5
 vmux31
 !s10a 1525271739
 !s110 1525271745
 !i10b 1
 !s100 B=]IELo4C>CBB7ZG0clFJ1
 IaXkJM?efUdBEe3@AUXkOS0
-R1
 R2
+R6
 w1525271739
 8../../src/mux31.v
 F../../src/mux31.v
 L0 3
-R3
+R4
 r1
 !s85 0
 31
@@ -91,19 +91,19 @@ r1
 !s107 ../../src/mux31.v|
 !s90 -reportprogress|300|-incr|../../src/mux31.v|
 !i113 1
-R4
+R5
 vpe
 !s110 1525273314
 !i10b 1
 !s100 OeR`[HTWS[@Bb4<`Fh1j[0
 I@Qnjf9^ZGSoI4M4Ak_g[53
-R1
 R2
+R6
 w1525273309
 8../../src/pe.v
 F../../src/pe.v
 L0 3
-R3
+R4
 r1
 !s85 0
 31
@@ -111,25 +111,46 @@ r1
 !s107 ../../src/pe.v|
 !s90 -reportprogress|300|-incr|../../src/pe.v|
 !i113 1
-R4
-vtestbench
-!s10a 1525272451
-!s110 1525272460
+R5
+vram_bank
+!s10a 1525305263
+!s110 1525305274
 !i10b 1
-!s100 K?@79hcCh2cMlfSWNh]:O1
-IWac:;dUHGoYSd:V>YE<Di0
-R1
+!s100 _1_bM?o0N^jkiG_B>1NO30
+II>FVUe?F5fY3UU?bRijbj3
 R2
-w1525272451
-8../../tb/pe_tb.v
-F../../tb/pe_tb.v
-L0 3
 R3
+w1525305263
+8../../src/ram_bank.v
+F../../src/ram_bank.v
+L0 3
+R4
 r1
 !s85 0
 31
-!s108 1525272460.097269
-!s107 ../../tb/pe_tb.v|
-!s90 -reportprogress|300|-incr|../../tb/pe_tb.v|
+!s108 1525305274.119309
+!s107 ../../src/ram_bank.v|
+!s90 -reportprogress|300|-incr|../../src/ram_bank.v|
 !i113 1
+R5
+vtestbench
+!s10a 1525555709
+R1
+!i10b 1
+!s100 z3fzKZ;aX6jBh^5?H6TW_1
+IaklO3R?CX;FoHA_`mzl2l0
+R2
+R3
+w1525555709
+8../../tb/complex_mul_tb.v
+F../../tb/complex_mul_tb.v
+L0 3
 R4
+r1
+!s85 0
+31
+!s108 1525555729.548225
+!s107 ../../tb/complex_mul_tb.v|
+!s90 -reportprogress|300|-incr|../../tb/complex_mul_tb.v|
+!i113 1
+R5
