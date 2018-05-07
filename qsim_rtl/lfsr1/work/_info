@@ -114,14 +114,14 @@ r1
 !i113 1
 R5
 vram_bank
-R1
-!s110 1525640121
+!s10a 1525719543
+!s110 1525719552
 !i10b 1
-!s100 V6^mCNE6fkQZVGjj;Mdhk0
-I@K^?G8kz6?HzmNZ6J:3II1
+!s100 aj@NN5jaVa<;`85F3Ao0k0
+ICdK1V<7e^Y:i>5^l25hWO2
 R2
 R3
-w1525640107
+w1525719543
 8/homes/user/spring18/wb2331/study/ald_2018/src/ram_bank.v
 F/homes/user/spring18/wb2331/study/ald_2018/src/ram_bank.v
 L0 3
@@ -129,20 +129,20 @@ R4
 r1
 !s85 0
 31
-!s108 1525640121.503531
+!s108 1525719552.261810
 !s107 /homes/user/spring18/wb2331/study/ald_2018/src/ram_bank.v|
 !s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/src/ram_bank.v|
 !i113 1
 R5
 vrfft_4pt
-R1
-!s110 1525632228
+!s10a 1525715898
+!s110 1525716125
 !i10b 1
-!s100 45ZCRL7UfK0`Q4nf8__O_1
-IN[<c5`@40>>;<LN0?e2z32
+!s100 `0bZ>9<_=?BE?Va3aDmR12
+IWU]b_HGQV^nk<7K396]gb1
 R2
 R3
-w1525632224
+w1525715898
 8/homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt.v
 F/homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt.v
 L0 3
@@ -150,28 +150,28 @@ R4
 r1
 !s85 0
 31
-!s108 1525632228.804826
+!s108 1525716125.744575
 !s107 /homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt.v|
 !s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt.v|
 !i113 1
 R5
 vtestbench
-!s110 1525706989
+!s110 1525720281
 !i10b 1
-!s100 Xh>4`IhVZ;YRm4?RWf0Jo1
-IBZ4Jc:9C3QPWm[cl_c[Oa1
+!s100 B>6DC9A`dejB]I]4e2V253
+I3Z1Ve:dTc^h<AR5JZG7;f2
 R2
 R3
-w1525706979
-8/homes/user/spring18/wb2331/study/ald_2018/tb/rfft_4pt_tb.v
-F/homes/user/spring18/wb2331/study/ald_2018/tb/rfft_4pt_tb.v
+w1525720259
+8/homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb.v
+F/homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb.v
 L0 3
 R4
 r1
 !s85 0
 31
-!s108 1525706989.473896
-!s107 /homes/user/spring18/wb2331/study/ald_2018/tb/rfft_4pt_tb.v|
-!s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/tb/rfft_4pt_tb.v|
+!s108 1525720280.923004
+!s107 /homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb.v|
+!s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb.v|
 !i113 1
 R5

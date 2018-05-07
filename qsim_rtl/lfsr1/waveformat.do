@@ -16,6 +16,9 @@ add wave -noupdate -radix binary :testbench:m21
 add wave -noupdate -radix binary :testbench:m22
 add wave -noupdate -radix binary :testbench:m23
 add wave -noupdate -radix binary :testbench:m24
+add wave -noupdate -radix binary :testbench:en
+add wave -noupdate -radix binary :testbench:we
+add wave -noupdate -radix binary :testbench:re
 add wave -noupdate -radix binary :testbench:bypass_en
 add wave -noupdate -radix binary :testbench:addr_read
 add wave -noupdate -radix binary :testbench:addr_write
@@ -24,6 +27,10 @@ add wave -noupdate -radix binary :testbench:stage
 add wave -noupdate -radix binary :testbench:read_s_index
 add wave -noupdate -radix binary :testbench:clk
 add wave -noupdate -radix binary :testbench:prepare_data
+add wave -noupdate -radix decimal :testbench:mem0_i
+add wave -noupdate -radix decimal :testbench:mem1_i
+add wave -noupdate -radix decimal :testbench:mem2_i
+add wave -noupdate -radix decimal :testbench:mem3_i
 add wave -noupdate -radix decimal :testbench:mem0
 add wave -noupdate -radix decimal :testbench:mem1
 add wave -noupdate -radix decimal :testbench:mem2

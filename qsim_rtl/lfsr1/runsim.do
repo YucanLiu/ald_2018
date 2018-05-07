@@ -14,7 +14,7 @@ vlog -incr /homes/user/spring18/wb2331/study/ald_2018/src/mux31.v
 vlog -incr /homes/user/spring18/wb2331/study/ald_2018/src/pe.v
 vlog -incr /homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt.v
 
-vlog -incr /homes/user/spring18/wb2331/study/ald_2018/tb/rfft_4pt_tb.v  
+vlog -incr /homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb.v  
 
 # Run Simulator
 vsim -t ns -lib work testbench
