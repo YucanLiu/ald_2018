@@ -19,10 +19,12 @@ def cal_twiddle():
 
 
 def to_twoscomplement(bits, value):
-    if value < 0:
-        value = ( 1<<bits ) + value
-    formatstring = '{:0%ib}' % bits
-    return formatstring.format(value)
+	if value < 0:
+		value = ( 1<<bits ) + value
+	else:
+		value = value
+	formatstring = '{:0%ib}' % bits
+	return formatstring.format(value)
 
 def main():
 	twiddle = cal_twiddle()

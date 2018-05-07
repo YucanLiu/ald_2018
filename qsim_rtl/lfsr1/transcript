@@ -14,70 +14,70 @@
 # vmap -modelsim_quiet work work 
 # Modifying modelsim.ini
 # QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 17:01:55 on May 06,2018
+# Start time: 20:08:24 on May 06,2018
 # vlog -reportprogress 300 -incr /homes/user/spring18/wb2331/study/ald_2018/src/complex_mul.v 
 # -- Skipping module complex_mul
 # 
 # Top level modules:
 # 	complex_mul
-# End time: 17:01:55 on May 06,2018, Elapsed time: 0:00:00
+# End time: 20:08:24 on May 06,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 17:01:55 on May 06,2018
+# Start time: 20:08:24 on May 06,2018
 # vlog -reportprogress 300 -incr /homes/user/spring18/wb2331/study/ald_2018/src/ram_bank.v 
 # -- Skipping module ram_bank
 # 
 # Top level modules:
 # 	ram_bank
-# End time: 17:01:55 on May 06,2018, Elapsed time: 0:00:00
+# End time: 20:08:24 on May 06,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 17:01:55 on May 06,2018
+# Start time: 20:08:24 on May 06,2018
 # vlog -reportprogress 300 -incr /homes/user/spring18/wb2331/study/ald_2018/src/mux21.v 
 # -- Skipping module mux21
 # 
 # Top level modules:
 # 	mux21
-# End time: 17:01:55 on May 06,2018, Elapsed time: 0:00:00
+# End time: 20:08:24 on May 06,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 17:01:55 on May 06,2018
+# Start time: 20:08:24 on May 06,2018
 # vlog -reportprogress 300 -incr /homes/user/spring18/wb2331/study/ald_2018/src/mux31.v 
 # -- Skipping module mux31
 # 
 # Top level modules:
 # 	mux31
-# End time: 17:01:55 on May 06,2018, Elapsed time: 0:00:00
+# End time: 20:08:24 on May 06,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 17:01:55 on May 06,2018
+# Start time: 20:08:24 on May 06,2018
 # vlog -reportprogress 300 -incr /homes/user/spring18/wb2331/study/ald_2018/src/pe.v 
 # -- Skipping module pe
 # 
 # Top level modules:
 # 	pe
-# End time: 17:01:55 on May 06,2018, Elapsed time: 0:00:00
+# End time: 20:08:24 on May 06,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 17:01:55 on May 06,2018
+# Start time: 20:08:24 on May 06,2018
 # vlog -reportprogress 300 -incr /homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt.v 
 # -- Skipping module rfft_4pt
 # 
 # Top level modules:
 # 	rfft_4pt
-# End time: 17:01:55 on May 06,2018, Elapsed time: 0:00:00
+# End time: 20:08:24 on May 06,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # QuestaSim-64 vlog 10.3d Compiler 2014.10 Oct  6 2014
-# Start time: 17:01:55 on May 06,2018
+# Start time: 20:08:24 on May 06,2018
 # vlog -reportprogress 300 -incr /homes/user/spring18/wb2331/study/ald_2018/tb/rfft_4pt_tb.v 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 17:01:55 on May 06,2018, Elapsed time: 0:00:00
+# End time: 20:08:24 on May 06,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -do "runsim.do" 
-# Start time: 17:01:55 on May 06,2018
+# Start time: 20:08:24 on May 06,2018
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # Loading work.testbench
 # Loading work.rfft_4pt
