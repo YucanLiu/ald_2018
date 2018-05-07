@@ -9,18 +9,18 @@ z2
 cModel Technology
 Z0 d/tools2/courses/ee6321/share/project/qsim_rtl/lfsr1
 vcomplex_mul
-!s10a 1525628066
+Z1 !s10a 1525705387
 !s110 1525628075
 !i10b 1
 !s100 3G7kBQnezD@mZn?L157jE2
 IiD9M8^9;c4kETEf_8hP5<0
-Z1 V`JN@9S9cnhjKRR_L]QIcM3
-Z2 d/homes/user/spring18/wb2331/study/ald_2018/qsim_rtl/lfsr1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+Z3 d/homes/user/spring18/wb2331/study/ald_2018/qsim_rtl/lfsr1
 w1525628066
 8/homes/user/spring18/wb2331/study/ald_2018/src/complex_mul.v
 F/homes/user/spring18/wb2331/study/ald_2018/src/complex_mul.v
 L0 3
-Z3 OL;L;10.3d;59
+Z4 OL;L;10.3d;59
 r1
 !s85 0
 31
@@ -28,20 +28,20 @@ r1
 !s107 /homes/user/spring18/wb2331/study/ald_2018/src/complex_mul.v|
 !s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/src/complex_mul.v|
 !i113 1
-Z4 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z5 o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vlfsr1
 !s10a 1437407754
 !s110 1476470941
 !i10b 1
 !s100 hTo8hKzdO=^P3=AlEQoz^3
 I834eQ7S_D<O`OkFPOAAoI0
-R1
+R2
 R0
 w1437407754
 8../../rtl/lfsr1/lfsr1.v
 F../../rtl/lfsr1/lfsr1.v
 L0 7
-R3
+R4
 r1
 !s85 0
 31
@@ -49,20 +49,20 @@ r1
 !s107 ../../rtl/lfsr1/lfsr1.v|
 !s90 -reportprogress|300|-incr|../../rtl/lfsr1/lfsr1.v|
 !i113 1
-R4
+R5
 vmux21
-Z5 !s10a 1525617953
+R1
 Z6 !s110 1525624620
 !i10b 1
 !s100 A8oj?GFYYFIf<`ElXQl4O3
 I:]d3TM8Ln2WAcF?^jGloF0
-R1
 R2
+R3
 Z7 w1525617953
 8/homes/user/spring18/wb2331/study/ald_2018/src/mux21.v
 F/homes/user/spring18/wb2331/study/ald_2018/src/mux21.v
 L0 3
-R3
+R4
 r1
 !s85 0
 31
@@ -70,20 +70,20 @@ r1
 !s107 /homes/user/spring18/wb2331/study/ald_2018/src/mux21.v|
 !s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/src/mux21.v|
 !i113 1
-R4
-vmux31
 R5
+vmux31
+R1
 R6
 !i10b 1
 !s100 B=]IELo4C>CBB7ZG0clFJ1
 IMIejVHQ`=1Oa2aSWG0?3c3
-R1
 R2
+R3
 R7
 8/homes/user/spring18/wb2331/study/ald_2018/src/mux31.v
 F/homes/user/spring18/wb2331/study/ald_2018/src/mux31.v
 L0 3
-R3
+R4
 r1
 !s85 0
 31
@@ -91,20 +91,20 @@ r1
 !s107 /homes/user/spring18/wb2331/study/ald_2018/src/mux31.v|
 !s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/src/mux31.v|
 !i113 1
-R4
-vpe
 R5
+vpe
+R1
 R6
 !i10b 1
 !s100 OeR`[HTWS[@Bb4<`Fh1j[0
 I>dL8YhJT835Uj]kKJo^A00
-R1
 R2
+R3
 R7
 8/homes/user/spring18/wb2331/study/ald_2018/src/pe.v
 F/homes/user/spring18/wb2331/study/ald_2018/src/pe.v
 L0 3
-R3
+R4
 r1
 !s85 0
 31
@@ -112,20 +112,20 @@ r1
 !s107 /homes/user/spring18/wb2331/study/ald_2018/src/pe.v|
 !s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/src/pe.v|
 !i113 1
-R4
+R5
 vram_bank
-!s10a 1525640149
+R1
 !s110 1525640121
 !i10b 1
 !s100 V6^mCNE6fkQZVGjj;Mdhk0
 I@K^?G8kz6?HzmNZ6J:3II1
-R1
 R2
+R3
 w1525640107
 8/homes/user/spring18/wb2331/study/ald_2018/src/ram_bank.v
 F/homes/user/spring18/wb2331/study/ald_2018/src/ram_bank.v
 L0 3
-R3
+R4
 r1
 !s85 0
 31
@@ -133,20 +133,20 @@ r1
 !s107 /homes/user/spring18/wb2331/study/ald_2018/src/ram_bank.v|
 !s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/src/ram_bank.v|
 !i113 1
-R4
+R5
 vrfft_4pt
-!s10a 1525632224
+R1
 !s110 1525632228
 !i10b 1
 !s100 45ZCRL7UfK0`Q4nf8__O_1
 IN[<c5`@40>>;<LN0?e2z32
-R1
 R2
+R3
 w1525632224
 8/homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt.v
 F/homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt.v
 L0 3
-R3
+R4
 r1
 !s85 0
 31
@@ -154,24 +154,24 @@ r1
 !s107 /homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt.v|
 !s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt.v|
 !i113 1
-R4
+R5
 vtestbench
-!s110 1525651704
+!s110 1525706989
 !i10b 1
-!s100 SMd`KO3i<ilfJP0koF69o0
-IVUh=ib[24i15W:nI:kQ>L0
-R1
+!s100 Xh>4`IhVZ;YRm4?RWf0Jo1
+IBZ4Jc:9C3QPWm[cl_c[Oa1
 R2
-w1525651697
+R3
+w1525706979
 8/homes/user/spring18/wb2331/study/ald_2018/tb/rfft_4pt_tb.v
 F/homes/user/spring18/wb2331/study/ald_2018/tb/rfft_4pt_tb.v
 L0 3
-R3
+R4
 r1
 !s85 0
 31
-!s108 1525651704.659069
+!s108 1525706989.473896
 !s107 /homes/user/spring18/wb2331/study/ald_2018/tb/rfft_4pt_tb.v|
 !s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/tb/rfft_4pt_tb.v|
 !i113 1
-R4
+R5

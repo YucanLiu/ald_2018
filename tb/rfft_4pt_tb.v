@@ -9,9 +9,9 @@ module testbench ();
 
   /* all the input data is stored here */  
   //reg [DATA_BIT * MEM_HEIGHT * 4 - 1 : 0] input_data;
-  reg [DATA_BIT - 1 : 0] input_data[0 : N - 1] = [16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0];
-  parameter [DATA_BIT - 1 : 0] twiddle_r[0 : N / 2 - 1] = [16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0];
-  parameter [DATA_BIT - 1 : 0] twiddle_i[0 : N / 2 - 1] = [16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0];
+  parameter [DATA_BIT - 1 : 0] input_data[0 : N - 1] = '{16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1};
+  parameter [DATA_BIT - 1 : 0] twiddle_r[0 : N / 2 - 1] = '{16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1};
+  parameter [DATA_BIT - 1 : 0] twiddle_i[0 : N / 2 - 1] = '{16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1, 16'b1};
 
   reg [DATA_BIT - 1 : 0] in0, in1, in2, in3, w_r, w_i;
   reg m0, m11, m14, m21, m22, m23, m24, bypass_en, clk;
@@ -37,45 +37,45 @@ module testbench ();
   always @(upcounter or stage)
 	case (stage)
 		3'b000: begin
-			w_r = twiddle[upcounter];
-			w_i = twiddle[upcounter];
+			w_r = twiddle_r[upcounter];
+			w_i = twiddle_i[upcounter];
 			bypass_en = 1;
 			end
 		3'b001: begin
-			w_r = twiddle[upcounter];
-			w_i = twiddle[upcounter];
+			w_r = twiddle_r[upcounter];
+			w_i = twiddle_i[upcounter];
 			bypass_en = 1;
 			end
 		3'b010: begin
-			w_r = twiddle[upcounter];
-			w_i = twiddle[upcounter];
+			w_r = twiddle_r[upcounter];
+			w_i = twiddle_i[upcounter];
 			bypass_en = 1;
 			end
 		3'b011: begin
-			w_r = twiddle[upcounter];
-			w_i = twiddle[upcounter];
+			w_r = twiddle_r[upcounter];
+			w_i = twiddle_i[upcounter];
 			bypass_en = 1;
 			end
 		3'b100: begin
-			w_r = twiddle[upcounter];
-			w_i = twiddle[upcounter];
+			w_r = twiddle_r[upcounter];
+			w_i = twiddle_i[upcounter];
 			bypass_en = 0;
 			end
 		3'b101: begin
-			w_r = twiddle[upcounter];
-			w_i = twiddle[upcounter];
+			w_r = twiddle_r[upcounter];
+			w_i = twiddle_i[upcounter];
 			bypass_en = 0;
 			end
 		default: begin
-			 w_r = twiddle[upcounter];
-			 w_i = twiddle[upcounter];
+			 w_r = twiddle_r[upcounter];
+			 w_i = twiddle_i[upcounter];
 			 bypass_en = 0;
 			 end
 	endcase
 
   /* stage counter */
   always @(upcounter /*or prepare_data*/)
-	if (upcounter == 3'b000 && prepare_data == 1'b1)
+	if (upcounter == 3'b000)
 		stage = stage + 1;
 
   /* load data control */
@@ -124,7 +124,8 @@ module testbench ();
   always @(upcounter or stage)
 	begin
 	case (stage)
-		3'b000: 
+		3'b000: begin
+			end 
 		3'b001: begin
 			m11 = 0;
 			m12 = 2;
