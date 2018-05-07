@@ -35,6 +35,10 @@ add wave -noupdate -radix decimal :testbench:mem0
 add wave -noupdate -radix decimal :testbench:mem1
 add wave -noupdate -radix decimal :testbench:mem2
 add wave -noupdate -radix decimal :testbench:mem3
+add wave -noupdate -radix decimal :testbench:input_d0;
+add wave -noupdate -radix decimal :testbench:input_d1;
+add wave -noupdate -radix decimal :testbench:input_d2;
+add wave -noupdate -radix decimal :testbench:input_d3;
 
 
 

@@ -135,6 +135,7 @@ r1
 !i113 1
 R5
 vram_bank256
+!s10a 1525724382
 !s110 1525724406
 !i10b 1
 !s100 UOHTUnV3diMd;JTX:06N63
@@ -197,6 +198,7 @@ r1
 !i113 1
 R5
 vrfft_4pt256
+!s10a 1525724336
 !s110 1525724407
 !i10b 1
 !s100 NAG50eG8?B97UF0Oe83U^2
@@ -217,22 +219,43 @@ r1
 !i113 1
 R5
 vtestbench
-!s110 1525724527
+!s10a 1525731842
+!s110 1525731865
 !i10b 1
-!s100 B>6DC9A`dejB]I]4e2V253
-I3Z1Ve:dTc^h<AR5JZG7;f2
+!s100 lOZ7X<7F0JG[D1MB7Z]7K1
+I:aoaHPn5l]g_EjhEe8m683
 R2
 R3
-w1525721395
-8/homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb.v
-F/homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb.v
+w1525731842
+8/homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb256.v
+F/homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb256.v
 L0 3
 R4
 r1
 !s85 0
 31
-!s108 1525724527.023691
-!s107 /homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb.v|
-!s90 -incr|/homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb.v|
+!s108 1525731865.407644
+!s107 /homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb256.v|
+!s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb256.v|
+!i113 1
+R5
+vtop_level
+!s110 1525732143
+!i10b 1
+!s100 g`FHAka4YC>d0gS9LnCk>3
+I;W@7K>Bz5>?_OicPRKAiS3
+R2
+R3
+w1525732128
+8/homes/user/spring18/wb2331/study/ald_2018/src/top_level.v
+F/homes/user/spring18/wb2331/study/ald_2018/src/top_level.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1525732143.422819
+!s107 /homes/user/spring18/wb2331/study/ald_2018/src/top_level.v|
+!s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/src/top_level.v|
 !i113 1
 R5
