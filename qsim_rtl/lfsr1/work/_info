@@ -114,7 +114,7 @@ r1
 !i113 1
 R5
 vram_bank
-!s10a 1525719543
+!s10a 1525724459
 !s110 1525719552
 !i10b 1
 !s100 aj@NN5jaVa<;`85F3Ao0k0
@@ -132,6 +132,47 @@ r1
 !s108 1525719552.261810
 !s107 /homes/user/spring18/wb2331/study/ald_2018/src/ram_bank.v|
 !s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/src/ram_bank.v|
+!i113 1
+R5
+vram_bank256
+!s110 1525724406
+!i10b 1
+!s100 UOHTUnV3diMd;JTX:06N63
+ISEQN5c8RC[?X<RMB2ib[L3
+R2
+R3
+w1525724382
+Z8 8/homes/user/spring18/wb2331/study/ald_2018/src/ram_bank256.v
+Z9 F/homes/user/spring18/wb2331/study/ald_2018/src/ram_bank256.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1525724406.764557
+Z10 !s107 /homes/user/spring18/wb2331/study/ald_2018/src/ram_bank256.v|
+Z11 !s90 -incr|/homes/user/spring18/wb2331/study/ald_2018/src/ram_bank256.v|
+!i113 1
+R5
+vram_bank64
+!s10a 1525723788
+!s110 1525724175
+!i10b 1
+!s100 d25FI39?<L7>eC=KB`Z222
+IzobDCVo12jQjK3^PbO=DM0
+R2
+R3
+w1525723788
+R8
+R9
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1525724175.910321
+R10
+R11
 !i113 1
 R5
 vrfft_4pt
@@ -155,14 +196,34 @@ r1
 !s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt.v|
 !i113 1
 R5
+vrfft_4pt256
+!s110 1525724407
+!i10b 1
+!s100 NAG50eG8?B97UF0Oe83U^2
+I4R56A9zMd[Ilzo6`1lEbb2
+R2
+R3
+w1525724336
+8/homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt256.v
+F/homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt256.v
+L0 3
+R4
+r1
+!s85 0
+31
+!s108 1525724407.079379
+!s107 /homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt256.v|
+!s90 -incr|/homes/user/spring18/wb2331/study/ald_2018/src/rfft_4pt256.v|
+!i113 1
+R5
 vtestbench
-!s110 1525720281
+!s110 1525724527
 !i10b 1
 !s100 B>6DC9A`dejB]I]4e2V253
 I3Z1Ve:dTc^h<AR5JZG7;f2
 R2
 R3
-w1525720259
+w1525721395
 8/homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb.v
 F/homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb.v
 L0 3
@@ -170,8 +231,8 @@ R4
 r1
 !s85 0
 31
-!s108 1525720280.923004
+!s108 1525724527.023691
 !s107 /homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb.v|
-!s90 -reportprogress|300|-incr|/homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb.v|
+!s90 -incr|/homes/user/spring18/wb2331/study/ald_2018/tb/top_level_tb.v|
 !i113 1
 R5
