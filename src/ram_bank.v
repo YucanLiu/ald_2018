@@ -19,11 +19,13 @@ module ram_bank(clk, en, we, re, addr_w, d_w, addr_r, d_r);
   always @ ( posedge clk ) begin
 
     if (en) begin
-      if (we) begin
-        mem[addr_w] = d_w;
-      end
       if (re) begin
+	#1
         d_r_o = mem[addr_r];
+      end
+      if (we) begin
+	#1
+        mem[addr_w] = d_w;
       end
     end
 
