@@ -9,9 +9,9 @@ module testbench ();
 
   /* all the input data is stored here */  
   //reg [DATA_BIT * MEM_HEIGHT * 4 - 1 : 0] input_data;
-  reg [DATA_BIT - 1 : 0] input_data[N - 1 : 0];
-  reg [DATA_BIT - 1 : 0] twiddle_r[N / 2 - 1 : 0];
-  reg [DATA_BIT - 1 : 0] twiddle_i[N / 2 - 1 : 0];
+  reg [DATA_BIT - 1 : 0] input_data[0 : N - 1] = [16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0];
+  parameter [DATA_BIT - 1 : 0] twiddle_r[0 : N / 2 - 1] = [16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0];
+  parameter [DATA_BIT - 1 : 0] twiddle_i[0 : N / 2 - 1] = [16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0, 16'b0];
 
   reg [DATA_BIT - 1 : 0] in0, in1, in2, in3, w_r, w_i;
   reg m0, m11, m14, m21, m22, m23, m24, bypass_en, clk;
@@ -33,9 +33,48 @@ module testbench ();
 	else if (start)
 		upcounter <= upcounter + 1;
 	
+  /* twiddle setup */
+  always @(upcounter or stage)
+	case (stage)
+		3'b000: begin
+			w_r = twiddle[upcounter];
+			w_i = twiddle[upcounter];
+			bypass_en = 1;
+			end
+		3'b001: begin
+			w_r = twiddle[upcounter];
+			w_i = twiddle[upcounter];
+			bypass_en = 1;
+			end
+		3'b010: begin
+			w_r = twiddle[upcounter];
+			w_i = twiddle[upcounter];
+			bypass_en = 1;
+			end
+		3'b011: begin
+			w_r = twiddle[upcounter];
+			w_i = twiddle[upcounter];
+			bypass_en = 1;
+			end
+		3'b100: begin
+			w_r = twiddle[upcounter];
+			w_i = twiddle[upcounter];
+			bypass_en = 0;
+			end
+		3'b101: begin
+			w_r = twiddle[upcounter];
+			w_i = twiddle[upcounter];
+			bypass_en = 0;
+			end
+		default: begin
+			 w_r = twiddle[upcounter];
+			 w_i = twiddle[upcounter];
+			 bypass_en = 0;
+			 end
+	endcase
 
   /* stage counter */
-  always @(upcounter or prepare_data)
+  always @(upcounter /*or prepare_data*/)
 	if (upcounter == 3'b000 && prepare_data == 1'b1)
 		stage = stage + 1;
 
@@ -206,6 +245,12 @@ module testbench ();
 			m13 = 1;
 			m14 = 1;
 			end
+		default: begin
+			 m11 = 0;
+			 m12 = 1;
+			 m13 = 1;
+			 m14 = 1;
+			 end
 	endcase
 	end
 
@@ -224,46 +269,11 @@ module testbench ();
 	prepare_data = 1;
 	
 	
-	#20	
-
-	in0 = 2;
-	in1 = 3;
-	in2 = 12;
-	in3 = 20;
-	w_r = 6;
-	w_i = 7;
-	m0 = 0;
-	m11 = 1'b0;
-	m12 = 2'b1;
-	m13 = 2'b1;
-	m14 = 1'b1;
-	m21 = 0;
-	m22 = 0;
-	m23 = 1;
-	m24 = 1;
-	bypass_en = 1;
-	addr_read = 12'b001010011100;
-	addr_write = 12'b001010011100;
-			
-	#50
-		in0 = 3;
-		in1 = 4;
-		in2 = 30;
-		in3 = 40;
-		w_r = 8;
-		w_i = 9;
-		m0 = 1;
-		m11 = 0;
-		m12 = 1;
-		m13 = 1;
-		m14 = 1;
-		m21 = 0;
-		m22 = 0;
-		m23 = 1;
-		m24 = 1;
-		bypass_en = 1;
-		addr_read = 12'b001010011100;
-		addr_write = 12'b001010011100;
+	#40
+	prepare_data = 0;	
+	upcounter = 3'b111;
+	stage = 0;
+	m0 = 1;
 			
 	
     
